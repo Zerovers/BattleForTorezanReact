@@ -1,0 +1,2846 @@
+/* body {
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  background-image: url('images/background_loginscreen.jpg');
+} */
+
+.login-background {
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  background-image: url('images/background_loginscreen.jpg');
+}
+
+
+h2, header, label, .game-description {
+  color: white;
+  text-shadow: #000 1px 0 0px, #000 0 1px 0px, #000 -1px 0 0px, #000 0 -1px 0px;
+}
+
+.login__game__name {
+
+}
+
+.login > header {
+  width: 85%;
+  text-align: center;
+  font-size: 35px;
+  margin: 60px auto 0;
+}
+
+label {
+  font-size: 20px;
+  margin-left: 38px;
+}
+
+.login {
+  width: 35%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.login > p {
+  margin: 170px auto 0;
+  width: 75%;
+  text-align: center;
+  font-size: 46px;
+  color: white;
+  text-shadow: #000 1px 0 0px, #000 0 1px 0px, #000 -1px 0 0px, #000 0 -1px 0px;
+}
+
+.login__content {
+  margin-top: 30px;
+  display: inline-block;
+  margin: 25px auto;
+}
+
+#login__content__input {
+  width: 100%;
+  height: 28px;
+  display: block;
+  padding-left: 15px;
+  margin-top: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+#login__content__button {
+  width: 108%;
+  margin: 15px auto;
+  height: 35px;
+  border-radius: 8px;
+  border: 2px solid rgb(86,69,75);
+  background-color: rgb(113,10,3);
+  color: rgb(192,150,14);
+  font-size: 20px;
+  font-weight: 600;
+  text-shadow: #000 1px 0 0px, #000 0 1px 0px, #000 -1px 0 1px, #000 0 -1px 0px;
+}
+
+#login__content__button:hover {
+  color: rgb(255,255,255);
+  background: linear-gradient(to right, #670402 10%, #de1101 69%, #670402);
+}
+
+#login__content__button:focus {
+  color: rgb(255,255,255);
+  background: linear-gradient(to right, #670402 10%, #de1101 69%, #670402);
+}
+
+.game-description {
+ display: flex;
+ font-size: 18px;
+}
+
+.game-description__controll {
+  width: 33%;
+  margin-left: 40px;
+}
+
+.game-description__rule {
+  width: 33%;
+  margin-left: 40px;
+}
+
+.game-description__feature {
+  width: 33%;
+  margin-left: 40px;
+}
+
+.battleArena-background {
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  background-image: url('images/background_battleZone.jpg')
+}
+
+.shadow-frame {
+  opacity: 0.4;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+}
+
+.hidden{
+  display: none;
+}
+
+.visibility {
+  display: flex;
+}
+
+.button__start-fight {
+  display: flex;
+  width: 300px;
+  height: 50px;
+  justify-content: center;
+  font-size: 30px;
+  margin: auto;
+  margin-top: 120px;
+  border: 2px solid rgb(86,69,75);
+  background-color: rgb(113,10,3);
+  color: rgb(192,150,14);
+  border-radius: 5px;
+  font-weight: 600;
+  text-shadow: #000 1px 0 0px, #000 0 1px 0px, #000 -1px 0 1px, #000 0 -1px 0px;
+}
+
+.button__start-fight:hover {
+  color: rgb(255,255,255);
+  background: linear-gradient(to right, #670402 10%, #de1101 69%, #670402);
+}
+
+.button__start-fight:focus {
+  color: rgb(255,255,255);
+  background: linear-gradient(to right, #670402 10%, #de1101 69%, #670402);
+}
+
+.hpBars {
+  display: flex;
+  color: white;
+  font-size: 27px;
+  font-weight: 800;
+  text-shadow: #000 1px 0 0px, #000 0 1px 0px, #000 -1px 0 0px, #000 0 -1px 0px;
+}
+
+.placeModel {
+  display: flex;
+  margin-top: 50px;
+}
+
+.player-Model {
+  display: flex;
+  width: 50%;
+  height: 500px;
+}
+
+.player-Model > .conteiner {
+  display: flex;
+  width: 175px;
+  height: 188px;
+  margin: 267px auto 0 auto;
+  position: relative;
+}
+
+.player {
+  margin: auto;
+}
+
+.player-name {
+  margin-bottom: 0;
+  text-align: center;
+  
+}
+
+.player-hp {
+  width: 500px;
+  height: 20px;
+  border: 2px solid rgb(236, 229, 156);
+  border-radius: 50px;
+  margin-top: 10px;
+}
+
+.player-hp > span {
+  width: 500px;
+  transition: width 1s;
+  display: block;
+  height: 100%;
+  background-color: rgb(19, 179, 52);
+  border-radius: 50px;
+  position: relative;
+}
+
+.enemy-Model {
+  width: 50%;
+  height: 500px;
+  display: flex;
+}
+
+.enemy-Model .conteiner {
+  display: flex;
+  width: 175px;
+  height: 188px;
+  margin: 267px auto 0 auto;
+  position: relative;
+}
+
+.enemy {
+  margin: auto;
+}
+
+.enemy-name {
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.enemy-hp {
+  width: 500px;
+  height: 20px;
+  border: 2px solid rgb(236, 229, 156);
+  border-radius: 50px;
+  margin-top: 10px
+}
+
+.enemy-hp > span {
+  width: 500px;
+  transition: width 1s;
+  display: block;
+  height: 100%;
+  background-color: rgb(19, 179, 52);
+  border-radius: 50px;
+  position: relative;
+}
+.context-menu {
+  width: 450px;
+  height: 270px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin: -510px auto;
+  z-index: 110;
+}
+
+.spell {
+  display: flex;
+  margin-top: 30px;
+}
+
+.context-menu__text {
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.spell__attack {
+  width: 200px;
+  height: 50px;
+  border-radius: 8px;
+  border: 2px solid rgb(86,69,75);
+  margin: auto;
+  background-color: rgb(91, 112, 183);
+  display: flex;
+}
+
+.spell__attack:hover {
+  color: rgb(255,255,255);
+  background: linear-gradient(to right, #253a7c 10%, #5b70b7 69%, #253a7c);
+}
+
+.spell__attack:focus {
+  color: rgb(255,255,255);
+  background: linear-gradient(to right, #670402 10%, #de1101 69%, #670402);
+}
+
+.spell__attack > p {
+  font-size: 25px;
+  margin: auto;
+}
+
+.spell__heal {
+  width: 200px;
+  height: 50px;
+  border-radius: 8px;
+  border: 2px solid rgb(86,69,75);
+  margin: auto;
+  background-color: rgb(142, 223, 76);
+  display: flex;
+}
+
+.spell__heal:hover {
+  color: rgb(255,255,255);
+  background: linear-gradient(to right, #8edf4c 10%, #a7c78d 69%, #8edf4c);
+}
+
+.spell__heal:focus {
+  color: rgb(255,255,255);
+  background: linear-gradient(to right, #8edf4c 10%, #a7c78d 69%, #8edf4c);
+}
+
+.spell__heal > p {
+  width: 160px;
+  margin: auto;
+}
+@keyframes activeHeadPlayer {
+  from {
+    margin-top: -103px;
+  }
+
+  to {
+    margin-top: -97px;
+  }
+}
+
+@keyframes playerAttack_Head {
+  from {
+    height: 176px;
+    margin-left: -151px;
+    margin-top: -103px;
+    z-index: 12;
+  }
+  
+  to {
+    height: 176px;
+    margin-left: -151px;
+    margin-top: -103px;
+    z-index: 12;
+    transform: rotate(-6deg);
+  }
+} 
+
+@keyframes playerAttack_Body {
+  0% {
+    width: 175px;
+    height: 188px;
+    z-index: 10;
+  }
+
+  50% {
+    width: 175px;
+    height: 188px;
+    z-index: 10;
+    transform: rotate(-4deg);
+  }
+
+  100% {
+    width: 175px;
+    height: 188px;
+    z-index: 10;
+  }
+}
+
+@keyframes playerAttack_LeftHand {
+  0% {
+    height: 120px;
+    margin-left: 17px;
+    margin-top: 46px;
+    z-index: 2;
+  }
+
+  50% {
+    height: 120px;
+    margin-left: 42px;
+    margin-top: 3px;
+    z-index: 2;
+    transform: rotate(-60deg);
+  }
+
+  100% {
+    height: 120px;
+    margin-left: 17px;
+    margin-top: 46px;
+    z-index: 2;
+  }
+}
+
+@keyframes playerAttack_rightHand {
+  0% {
+    height: 130px;
+    margin-left: -159px;
+    margin-top: 54px;
+    z-index: 11;
+  }
+
+  50% {
+    height: 130px;
+    margin-left: -159px;
+    margin-top: 54px;
+    z-index: 11;
+    transform: rotate(20deg);
+  }
+
+  100% {
+    height: 130px;
+    margin-left: -159px;
+    margin-top: 54px;
+    z-index: 11;
+  }
+}
+
+@keyframes playerAttack_LeftFinger {
+  0% {
+    height: 69px;
+    margin-top: 99px;
+    margin-left: -38px;
+    z-index: 4;
+  }
+  
+  50% {
+    height: 66px;
+    margin-top: 4px;
+    margin-left: -32px;
+    z-index: 4;
+    transform: rotate(-60deg);
+  }
+
+  100% {
+    height: 69px;
+    margin-top: 99px;
+    margin-left: -38px;
+    z-index: 4;
+  }
+}
+
+@keyframes playerAttack_leftLeg {
+  0% {
+    height: 77px;
+    margin-top: 156px;
+    margin-left: -130px;
+    z-index: 5;
+  }
+
+  50% {
+    height: 77px;
+    margin-top: 156px;
+    margin-left: -130px;
+    z-index: 5;
+    transform: rotate(8deg);
+  }
+
+  100% {
+    height: 77px;
+    margin-top: 156px;
+    margin-left: -130px;
+    z-index: 5;
+  }
+}
+
+@keyframes playerAttack_Weapon {
+  0% {
+    height: 210px;
+    margin-left: -59px;
+    margin-top: -15px;
+    z-index: 3;
+  }
+
+  50% {
+    height: 210px;
+    margin-left: -113px;
+    margin-top: -111px;
+    z-index: 3;
+    transform: rotate(-60deg);
+  }
+
+  100% {
+    height: 210px;
+    margin-left: -59px;
+    margin-top: -15px;
+    z-index: 3;
+  }
+}
+
+.mage-body {
+  width: 175px;
+  height: 188px;
+  z-index: 10;
+}
+
+.mage-head {
+  height: 176px;
+  margin-left: -151px;
+  margin-top: -103px;
+  z-index: 12;
+}
+
+.mage-head.activeHead {
+  animation: activeHeadPlayer 0.8s linear infinite alternate;
+  height: 176px;
+  margin-left: -151px;
+  margin-top: -103px;
+  z-index: 12;
+}
+
+.mage-leftLeg {
+  height: 77px;
+  margin-top: 156px;
+  margin-left: -130px;
+  z-index: 5;
+}
+
+.mage-RightLeg {
+  height: 75px;
+  margin-top: 150px;
+  margin-left: -26px;
+  z-index: 4;
+}
+
+.mage-leftHand {
+  height: 120px;
+  margin-left: 17px;
+  margin-top: 46px;
+  z-index: 2;
+}
+
+.mage-rightHand {
+  height: 130px;
+  margin-left: -159px;
+  margin-top: 54px;
+  z-index: 11;
+}
+
+.mage-leftFinger {
+  height: 69px;
+  margin-top: 99px;
+  margin-left: -38px;
+  z-index: 4;
+}
+
+.mage-weapon {
+  height: 210px;
+  margin-left: -59px;
+  margin-top: -15px;
+  z-index: 3;
+}
+
+.mage-body_active  {
+  animation: playerAttack_Body 1s linear;
+  width: 175px;
+  height: 188px;
+  z-index: 10;
+}
+
+.mage-head_active {
+  animation: playerAttack_Head 1s linear;
+  height: 176px;
+  margin-left: -151px;
+  margin-top: -103px;
+  z-index: 12;
+}
+
+.mage-leftLeg_active {
+  animation: playerAttack_leftLeg 1s linear;
+  height: 77px;
+  margin-top: 156px;
+  margin-left: -130px;
+  z-index: 5;
+}
+
+.mage-leftHand_active {
+  animation: playerAttack_LeftHand 1s linear;
+  height: 120px;
+  margin-left: 17px;
+  margin-top: 46px;
+  z-index: 2;
+}
+
+.mage-rightHand_active {
+  animation: playerAttack_rightHand 1s linear;
+  height: 130px;
+  margin-left: -159px;
+  margin-top: 54px;
+  z-index: 11;
+}
+
+.mage-leftFinger_active {
+  animation: playerAttack_LeftFinger 1s linear;
+  height: 69px;
+  margin-top: 99px;
+  margin-left: -38px;
+  z-index: 4;
+}
+
+.mage-weapon_active {
+  animation: playerAttack_Weapon 1s linear;
+  height: 210px;
+  margin-left: -59px;
+  margin-top: -15px;
+  z-index: 3;
+}
+
+.spell.frostbolt {
+  width: 50px;
+  height: 54px;
+  transform: rotate(132deg);
+  z-index: 15;
+  transition: left 500ms;
+  left: 305px;
+  top: -25px;
+  position: absolute;
+  visibility: hidden;
+}
+
+.spell.fireball {
+  width: 71px;
+  height: 71px;
+  transform: rotate(132deg);
+  z-index: 15;
+  transition: left 500ms;
+  left: 305px;
+  top: -25px;
+  position: absolute;
+  visibility: hidden;
+}
+
+.spell.arcaneblast {
+  width: 71px;
+  height: 72px;
+  transform: rotate(132deg);
+  z-index: 15;
+  transition: left 500ms;
+  left: 305px;
+  top: -25px;
+  position: absolute;
+  visibility: hidden;
+}
+
+.spell.arcanemissile {
+  width: 70px;
+  height: 74px;
+  transform: rotate(228deg);
+  z-index: 15;
+  transition: left 500ms;
+  left: 305px;
+  top: -25px;
+  position: absolute;
+  visibility: hidden;
+}
+
+.spell.shadowbolt {
+  width: 85px;
+  height: 93px;
+  transform: rotate(132deg);
+  z-index: 15;
+  transition: left 500ms;
+  left: 305px;
+  top: -25px;
+  position: absolute;
+  visibility: hidden;
+}
+
+.heal {
+  z-index: 1;
+  position: absolute;
+  top: 171px;
+  left: -15px;
+  visibility: hidden;
+}
+
+/* ********************** */
+
+@keyframes player_takeDamage_Head {
+  from {
+    height: 176px;
+    margin-left: -151px;
+    margin-top: -103px;
+    z-index: 12;
+  }
+
+  to {
+    transform: rotate(-12deg);
+    height: 176px;
+    margin-left: -155px;
+    margin-top: -103px;
+    z-index: 12;
+  }
+}
+
+@keyframes player_takeDamage_Body {
+  from {
+    width: 175px;
+    height: 188px;
+    z-index: 10;
+  }
+
+  to {
+    transform: rotate(-7deg);
+    width: 175px;
+    height: 188px;
+    z-index: 10;   
+  }
+}
+
+@keyframes player_takeDamage_rightHand {
+  from {
+    height: 130px;
+    margin-left: -159px;
+    margin-top: 54px;
+    z-index: 11;
+  }
+
+  to {
+    transform: rotate(-16deg);
+    height: 130px;
+    margin-left: -150px;
+    margin-top: 54px;
+    z-index: 11;   
+  }
+}
+
+@keyframes player_takeDamage_leftHand {
+  from {
+    height: 120px;
+    margin-left: 17px;
+    margin-top: 46px;
+    z-index: 2;
+  }
+
+  to {
+    transform: rotate(-8deg);
+    height: 120px;
+    margin-left: 13px;
+    margin-top: 39px;
+    z-index: 2;   
+  }
+}
+
+@keyframes player_takeDamage_finger {
+  from {
+    height: 69px;
+    margin-top: 99px;
+    margin-left: -38px;
+    z-index: 4;
+  }
+
+  to {
+    transform: rotate(-14deg);
+    height: 69px;
+    margin-top: 84px;
+    margin-left: -35px;
+    z-index: 4;  
+  }
+}
+
+@keyframes player_takeDamage_weapon {
+  from {
+    height: 210px;
+    margin-left: -59px;
+    margin-top: -15px;
+    z-index: 3;
+  }
+
+  to {
+    transform: rotate(-10deg);
+    height: 210px;
+    margin-left: -66px;
+    margin-top: -36px;
+    z-index: 3; 
+  }
+}
+
+@keyframes player_takeDamage_rightLeg {
+  from {
+    height: 75px;
+    margin-top: 150px;
+    margin-left: -26px;
+    z-index: 4;
+  }
+
+  to {
+    transform: rotate(-12deg);
+    height: 75px;
+    margin-top: 150px;
+    margin-left: -26px;
+    z-index: 4;
+  }
+}
+
+@keyframes player_takeDamage_leftLeg {
+  from {
+    height: 77px;
+    margin-top: 156px;
+    margin-left: -130px;
+    z-index: 5;
+  }
+
+  to {
+    transform: rotate(-6deg);
+    height: 77px;
+    margin-top: 156px;
+    margin-left: -130px;
+    z-index: 5;   
+  }
+}
+
+.mage-take-damage_head {
+  animation: player_takeDamage_Head 0.5s linear;
+  height: 176px;
+  margin-left: -151px;
+  margin-top: -103px;
+  z-index: 12;
+}
+
+.mage-take-damage_body {
+  animation: player_takeDamage_Body 0.5s linear;
+  width: 175px;
+  height: 188px;
+  z-index: 10;
+}
+
+.mage-take-damage_rightHand {
+  animation: player_takeDamage_rightHand 0.5s linear;
+  height: 130px;
+  margin-left: -159px;
+  margin-top: 54px;
+  z-index: 11;
+}
+
+.mage-take-damage_leftHand {
+  animation: player_takeDamage_leftHand 0.5s linear;
+  height: 120px;
+  margin-left: 17px;
+  margin-top: 46px;
+  z-index: 2;
+}
+
+.mage-take-damage_leftFinger {
+  animation: player_takeDamage_finger 0.5s linear;
+  height: 69px;
+  margin-top: 99px;
+  margin-left: -38px;
+  z-index: 4;
+}
+
+.mage-take-damage_weapon {
+  animation: player_takeDamage_weapon 0.5s linear;
+  height: 210px;
+  margin-left: -59px;
+  margin-top: -15px;
+  z-index: 3;
+}
+
+.mage-take-damage_rightLeg {
+  animation: player_takeDamage_rightLeg 0.5s linear;
+  height: 75px;
+  margin-top: 150px;
+  margin-left: -26px;
+  z-index: 4;
+}
+
+.mage-take-damage_leftLeg {
+  animation: player_takeDamage_leftLeg 0.5s linear;
+  height: 77px;
+  margin-top: 156px;
+  margin-left: -130px;
+  z-index: 5;
+}
+
+/* ************************************************ */
+
+@keyframes player-take-heal_rightHand {
+  0% {
+    height: 130px;
+    margin-left: -159px;
+    margin-top: 54px;
+    z-index: 11;
+  }
+
+  50% {
+    transform: rotate(10deg);
+    height: 130px;
+    margin-left: -164px;
+    margin-top: 57px;
+    z-index: 11;
+  }
+
+  100% {
+    transform: rotate(10deg);
+    height: 130px;
+    margin-left: -164px;
+    margin-top: 57px;
+    z-index: 11;
+  }
+}
+
+@keyframes player-take-heal_leftHand {
+  0% {
+    height: 120px;
+    margin-left: 17px;
+    margin-top: 46px;
+    z-index: 2;
+  }
+
+  50% {
+    transform: rotate(-27deg);
+    height: 120px;
+    margin-left: 24px;
+    margin-top: 38px;
+    z-index: 2;
+  }
+
+  100% {
+    transform: rotate(-27deg);
+    height: 120px;
+    margin-left: 24px;
+    margin-top: 38px;
+    z-index: 2;
+  }
+}
+
+@keyframes player-take-heal_finger {
+  0% {
+    height: 69px;
+    margin-top: 99px;
+    margin-left: -38px;
+    z-index: 4;
+  }
+
+  50% {
+    height: 69px;
+    margin-top: 69px;
+    margin-left: -35px;
+    z-index: 4;
+    transform: rotate(-17deg); 
+  }
+
+  100% {
+    height: 69px;
+    margin-top: 69px;
+    margin-left: -35px;
+    z-index: 4;
+    transform: rotate(-17deg); 
+  }
+}
+
+@keyframes player-take-heal_weapon {
+  0% {
+    height: 210px;
+    margin-left: -59px;
+    margin-top: -15px;
+    z-index: 3;
+  }
+
+  50% {
+    transform: rotate(-9deg);
+    height: 210px;
+    margin-left: -65px;
+    margin-top: -48px;
+    z-index: 3; 
+  }
+
+  100% {
+    transform: rotate(-9deg);
+    height: 210px;
+    margin-left: -65px;
+    margin-top: -48px;
+    z-index: 3;
+  }
+}
+
+.mage-take-heal_rightHand {
+  animation: player-take-heal_rightHand 1s linear;
+  height: 130px;
+  margin-left: -159px;
+  margin-top: 54px;
+  z-index: 11;
+}
+
+.mage-take-heal_leftHand {
+  animation: player-take-heal_leftHand 1s linear;
+  height: 120px;
+  margin-left: 17px;
+  margin-top: 46px;
+  z-index: 2;
+}
+
+.mage-take-heal_leftFinger {
+  animation: player-take-heal_finger 1s linear;
+  height: 69px;
+  margin-top: 99px;
+  margin-left: -38px;
+  z-index: 4;
+}
+
+.mage-take-heal_weapon {
+  animation: player-take-heal_weapon 1s linear;
+  height: 210px;
+  margin-left: -59px;
+  margin-top: -15px;
+  z-index: 3;
+}
+@keyframes activeHead {
+  from {
+    top: -147px;
+  }
+
+  to {
+    top: -140px;
+  }
+}
+
+@keyframes enemy_takeDamage_Head {
+  from {
+    transform: scaleX(-1);
+    position: absolute;
+    top: -147px;
+    height: 171px;
+    z-index: 10;
+  }
+
+  to {
+    transform: scaleX(-1) rotate(-7deg);
+    position: absolute;
+    top: -147px;
+    height: 171px;
+    z-index: 10;
+  }
+}
+
+@keyframes enemy_takeDamage_Head-troll {
+  from {
+    transform: scaleX(-1);
+    position: absolute;
+    top: -147px;
+    height: 198px;
+    z-index: 10;
+  }
+
+  to {
+    transform: scaleX(-1)rotate(-11deg);
+    position: absolute;
+    top: -147px;
+    height: 198px;
+    z-index: 10;
+  }
+}
+
+@keyframes enemy_takeDamage_Body {
+  from {
+    transform: scaleX(-1);
+    height: 308px;
+    position: absolute;
+    top: -120px;
+    z-index: 9;
+  }
+  
+  to {
+    transform: scaleX(-1) rotate(-11deg);
+    height: 308px;
+    position: absolute;
+    top: -120px;
+    z-index: 9;
+  }
+}
+
+@keyframes enemy_takeDamage_rightHand {
+  from {
+    transform: scaleX(-1);
+    position: absolute;
+    left: -212px;
+    top: -28px;
+    height: 182px;
+    z-index: 8;
+  }
+
+  to {
+    transform: scaleX(-1) rotate(-27deg);
+    position: absolute;
+    left: -215px;
+    top: -85px;
+    height: 182px;
+    z-index: 8;
+  }
+}
+
+@keyframes enemy_takeDamage_rightHand-orc {
+  from {
+    transform: scaleX(-1);
+    position: absolute;
+    left: -49px;
+    top: -41px;
+    height: 205px;
+    z-index: 8;
+  }
+
+  to {
+    transform: scaleX(-1)rotate(-37deg);
+    position: absolute;
+    left: -45px;
+    top: -44px;
+    height: 205px;
+    z-index: 8;
+  }
+}
+
+@keyframes enemy_takeDamage_rightHand-troll {
+  from {
+    transform: scaleX(-1);
+    position: absolute;
+    left: -167px;
+    top: -28px;
+    height: 182px;
+    z-index: 8;
+  }
+
+  to {
+    transform: scaleX(-1)rotate(-27deg);
+    position: absolute;
+    left: -178px;
+    top: -56px;
+    height: 182px;
+    z-index: 8;
+  }
+}
+
+@keyframes enemy_takeDamage_leftHand {
+  from {
+    transform: scaleX(-1);
+    height: 240px;
+    position: absolute;
+    left: 167px;
+    top: -22px;
+    z-index: 10;
+  }
+
+  to {
+    transform: scaleX(-1) rotate(-35deg);
+    height: 240px;
+    position: absolute;
+    left: 106px;
+    top: -11px;
+    z-index: 10;
+  }
+}
+
+@keyframes enemy_takeDamage_leftHand-troll {
+  from {
+    transform: scaleX(-1);
+    height: 240px;
+    position: absolute;
+    left: 145px;
+    top: -64px;
+    z-index: 10;
+  }
+
+  to {
+    transform: scaleX(-1)rotate(-37deg);
+    height: 240px;
+    position: absolute;
+    left: 86px;
+    top: -59px;
+    z-index: 10;
+  }
+}
+
+@keyframes enemy_takeDamage_rightLeg {
+  from {
+    transform: scaleX(-1);
+    height: 120px;
+    position: absolute;
+    top: 122px;
+    left: 48px;
+  }
+
+  to {
+    transform: scaleX(-1) rotate(-11deg);
+    height: 120px;
+    position: absolute;
+    top: 115px;
+    left: 25px;
+  }
+}
+
+@keyframes enemy_takeDamage_leftLeg {
+  from {
+    transform: scaleX(-1);
+    height: 120px;
+    position: absolute;
+    left: 108px;
+    top: 127px;
+  }
+
+  to {
+    transform: scaleX(-1);
+    height: 120px;
+    position: absolute;
+    left: 77px;
+    top: 127px;
+  }
+}
+
+@keyframes enemy_takeDamage_weapon-orc {
+  from {
+    transform: scaleX(-1);
+    height: 165px;
+    position: absolute;
+    left: -200px;
+    z-index: 10;
+  }
+  
+  to {
+    transform: scaleX(-1)rotate(-29deg);
+    height: 165px;
+    position: absolute;
+    left: -200px;
+    top: -46px;
+    z-index: 10;
+  }
+}
+
+.enemy-head {
+  transform: scaleX(-1);
+  position: absolute;
+  top: -147px;
+  height: 171px;
+  z-index: 10;
+}
+
+.enemy-head.activeHead  {
+  animation: activeHead 1s linear infinite alternate;
+  transform: scaleX(-1);
+  position: absolute;
+  top: -147px;
+  height: 171px;
+  z-index: 10;
+}
+
+
+.enemy-body {
+  transform: scaleX(-1);
+  height: 308px;
+  position: absolute;
+  top: -120px;
+  z-index: 9;
+}
+
+.enemy-rightHand {
+  transform: scaleX(-1);
+  position: absolute;
+  left: -212px;
+  top: -28px;
+  height: 182px;
+  z-index: 8;
+}
+
+.enemy-leftHand {
+  transform: scaleX(-1);
+  height: 240px;
+  position: absolute;
+  left: 167px;
+  top: -22px;
+  z-index: 10;
+}
+
+.enemy-rightLeg {
+  transform: scaleX(-1);
+  height: 120px;
+  position: absolute;
+  top: 122px;
+  left: 48px;
+}
+
+.enemy-leftLeg {
+  transform: scaleX(-1);
+  height: 120px;
+  position: absolute;
+  left: 108px;
+  top: 127px;
+}
+
+.enemy-rightHand.orc {
+  transform: scaleX(-1);
+  position: absolute;
+  left: -49px;
+  top: -41px;
+  height: 205px;
+  z-index: 8;
+}
+
+.enemy-leftHand.orc {
+  transform: scaleX(-1);
+  height: 240px;
+  position: absolute;
+  left: 167px;
+  top: -53px;
+  z-index: 10;
+}
+
+.enemy-rightLeg.orc {
+  transform: scaleX(-1);
+  height: 120px;
+  position: absolute;
+  top: 122px;
+  left: 57px;
+}
+
+.enemy-leftLeg.orc {
+  transform: scaleX(-1);
+  height: 120px;
+  position: absolute;
+  left: 119px;
+  top: 127px;
+}
+
+.enemy-weapon.orc {
+  transform: scaleX(-1);
+  height: 165px;
+  position: absolute;
+  left: -200px;
+  top: 0;
+  z-index: 10;
+}
+
+.enemy-head.troll {
+  transform: scaleX(-1);
+  position: absolute;
+  top: -147px;
+  height: 198px;
+  z-index: 10;
+}
+
+.enemy-head.troll.activeHead {
+  animation: activeHead 1s linear infinite alternate;
+  transform: scaleX(-1);
+  position: absolute;
+  top: -147px;
+  height: 198px;
+  z-index: 10;
+}
+
+.enemy-rightHand.troll {
+  transform: scaleX(-1);
+  position: absolute;
+  left: -167px;
+  top: -28px;
+  height: 182px;
+  z-index: 8;
+}
+
+.enemy-leftHand.troll {
+  transform: scaleX(-1);
+  height: 240px;
+  position: absolute;
+  left: 145px;
+  top: -64px;
+  z-index: 10;
+}
+
+.take-damage_head {
+  animation: enemy_takeDamage_Head 0.5s linear;
+  transform: scaleX(-1);
+  position: absolute;
+  top: -147px;
+  height: 171px;
+  z-index: 10;
+}
+
+.take-damage_head-troll {
+  animation: enemy_takeDamage_Head-troll 0.5s linear;
+  transform: scaleX(-1);
+  position: absolute;
+  top: -147px;
+  height: 198px;
+  z-index: 10;
+}
+
+.take-damage_body {
+  animation: enemy_takeDamage_Body 0.5s linear;
+  transform: scaleX(-1);
+  height: 308px;
+  position: absolute;
+  top: -120px;
+  z-index: 9;
+}
+
+.take-damage_rightHand {
+  animation: enemy_takeDamage_rightHand 0.5s linear;
+  transform: scaleX(-1);
+  position: absolute;
+  left: -212px;
+  top: -28px;
+  height: 182px;
+  z-index: 8;
+}
+
+.take-damage_rightHand-orc {
+  animation: enemy_takeDamage_rightHand-orc 0.5s linear;
+  transform: scaleX(-1);
+  position: absolute;
+  left: -49px;
+  top: -41px;
+  height: 205px;
+  z-index: 8;
+}
+
+.take-damage-rightHand-troll {
+  animation: enemy_takeDamage_rightHand-troll 0.5s linear;
+  transform: scaleX(-1);
+  position: absolute;
+  left: -167px;
+  top: -28px;
+  height: 182px;
+  z-index: 8;
+}
+
+.take-damage_leftHand {
+  animation: enemy_takeDamage_leftHand 0.5s linear;
+  transform: scaleX(-1);
+  height: 240px;
+  position: absolute;
+  left: 167px;
+  top: -22px;
+  z-index: 10;
+}
+
+.take-damage-leftHand-troll {
+  animation: enemy_takeDamage_leftHand-troll 0.5s linear;
+  transform: scaleX(-1);
+  height: 240px;
+  position: absolute;
+  left: 145px;
+  top: -64px;
+  z-index: 10;
+}
+
+.take-damage_rightLeg {
+  animation: enemy_takeDamage_rightLeg 0.5s linear;
+  transform: scaleX(-1);
+  height: 120px;
+  position: absolute;
+  top: 122px;
+  left: 48px;
+}
+
+.take-damage_leftLeg {
+  animation: enemy_takeDamage_leftLeg 0.5s linear;
+  transform: scaleX(-1);
+  height: 120px;
+  position: absolute;
+  left: 108px;
+  top: 127px;
+}
+
+.take-damage-weapon-orc {
+  animation: enemy_takeDamage_weapon-orc 0.5s linear;
+  transform: scaleX(-1);
+  height: 165px;
+  position: absolute;
+  left: -200px;
+  z-index: 10;
+}
+
+/* ******************************************************* */
+
+@keyframes enemy_attack_rightHand {
+  0% {
+    transform: scaleX(-1);
+    position: absolute;
+    left: -212px;
+    top: -28px;
+    height: 182px;
+    z-index: 8;
+  }
+
+  50% {
+    transform: scaleX(-1) rotate(-69deg);
+    position: absolute;
+    left: -186px;
+    top: -157px;
+    height: 182px;
+    z-index: 8;
+  }
+
+  100% {
+    transform: scaleX(-1);
+    position: absolute;
+    left: -212px;
+    top: -28px;
+    height: 182px;
+    z-index: 8;
+  }
+}
+
+@keyframes enemy_attack_leftHand {
+  0% {
+    transform: scaleX(-1);
+    height: 240px;
+    position: absolute;
+    left: 167px;
+    top: -22px;
+    z-index: 10;
+  }
+
+  50% {
+    transform: scaleX(-1) rotate(8deg);
+    height: 240px;
+    position: absolute;
+    left: 180px;
+    top: -26px;
+    z-index: 10;
+  }
+
+  100% {
+    transform: scaleX(-1);
+    height: 240px;
+    position: absolute;
+    left: 167px;
+    top: -22px;
+    z-index: 10;
+  }
+}
+
+@keyframes enemy_attack_rightHand-orc {
+  0% {
+    transform: scaleX(-1);
+    position: absolute;
+    left: -49px;
+    top: -41px;
+    height: 205px;
+    z-index: 8;
+  }
+
+  50% {
+    transform: scaleX(-1)rotate(-97deg);
+    position: absolute;
+    left: -82px;
+    top: -146px;
+    height: 205px;
+    z-index: 8;
+  }
+
+  100% {
+    transform: scaleX(-1);
+    position: absolute;
+    left: -49px;
+    top: -41px;
+    height: 205px;
+    z-index: 8;
+  }
+}
+
+@keyframes enemy_attack_leftHand-orc {
+  0% {
+    transform: scaleX(-1);
+    height: 240px;
+    position: absolute;
+    left: 167px;
+    top: -53px;
+    z-index: 10;
+  }
+
+  50% {
+    transform: scaleX(-1)rotate(11deg);
+    height: 240px;
+    position: absolute;
+    left: 181px;
+    top: -56px;
+    z-index: 10;
+  }
+
+  100% {
+    transform: scaleX(-1);
+    height: 240px;
+    position: absolute;
+    left: 167px;
+    top: -53px;
+    z-index: 10;
+  }
+}
+
+@keyframes enemy_attack_weapon-orc {
+  0% {
+    transform: scaleX(-1);
+    height: 165px;
+    position: absolute;
+    left: -200px;
+    top: 0;
+    z-index: 10;
+  }
+
+  50% {
+    transform: scaleX(-1)rotate(-98deg);
+    height: 165px;
+    position: absolute;
+    left: -164px;
+    top: -210px;
+    z-index: 10;
+  }
+
+  100% {
+    transform: scaleX(-1);
+    height: 165px;
+    position: absolute;
+    left: -200px;
+    top: 0;
+    z-index: 10;
+  }
+}
+
+@keyframes enemy_attack_rightHand-troll {
+  0% {
+    transform: scaleX(-1);
+    position: absolute;
+    left: -167px;
+    top: -28px;
+    height: 182px;
+    z-index: 8;
+  }
+
+  50% {
+    transform: scaleX(-1)rotate(-73deg);
+    position: absolute;
+    left: -173px;
+    top: -190px;
+    height: 182px;
+    z-index: 8;
+  }
+
+  100% {
+    transform: scaleX(-1);
+    position: absolute;
+    left: -167px;
+    top: -28px;
+    height: 182px;
+    z-index: 8;
+  }
+}
+
+@keyframes enemy_attack_leftHand-troll {
+  0% {
+    transform: scaleX(-1);
+    height: 240px;
+    position: absolute;
+    left: 145px;
+    top: -64px;
+    z-index: 10;
+  }
+
+  50% {
+    transform: scaleX(-1)rotate(10deg);
+    height: 240px;
+    position: absolute;
+    left: 166px;
+    top: -64px;
+    z-index: 10;
+  }
+
+  100% {
+    transform: scaleX(-1);
+    height: 240px;
+    position: absolute;
+    left: 145px;
+    top: -64px;
+    z-index: 10;
+  }
+}
+
+.enemy-attack_rightHand {
+  animation: enemy_attack_rightHand 1s linear;
+  transform: scaleX(-1);
+  position: absolute;
+  left: -212px;
+  top: -28px;
+  height: 182px;
+  z-index: 8;
+}
+
+.enemy-attack_leftHand {
+  animation: enemy_attack_leftHand 1s linear;
+  transform: scaleX(-1);
+  height: 240px;
+  position: absolute;
+  left: 167px;
+  top: -22px;
+  z-index: 10;
+}
+
+.enemy-attack-rightHand-orc {
+  animation: enemy_attack_rightHand-orc 1s linear;
+  transform: scaleX(-1);
+  position: absolute;
+  left: -49px;
+  top: -41px;
+  height: 205px;
+  z-index: 8;
+}
+
+.enemy-attack-leftHand-orc {
+  animation: enemy_attack_leftHand-orc 1s linear;
+  transform: scaleX(-1);
+  height: 240px;
+  position: absolute;
+  left: 167px;
+  top: -53px;
+  z-index: 10;
+}
+
+.enemy-attack-weapon-orc {
+  animation: enemy_attack_weapon-orc 1s linear;
+  transform: scaleX(-1);
+  height: 165px;
+  position: absolute;
+  left: -200px;
+  top: 0;
+  z-index: 10;
+}
+
+.enemy-attack_rightHand-troll {
+  animation: enemy_attack_rightHand-troll 1s linear;
+  transform: scaleX(-1);
+  position: absolute;
+  left: -167px;
+  top: -28px;
+  height: 182px;
+  z-index: 8;
+}
+
+.enemy-attack_leftHand-troll {
+  animation: enemy_attack_leftHand-troll 1s linear;
+  transform: scaleX(-1);
+  height: 240px;
+  position: absolute;
+  left: 145px;
+  top: -64px;
+  z-index: 10;
+}
+.attack__spells__list {
+  width: 500px;
+  height: 380px;
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  margin: auto;
+  margin-top: -550px;
+  background-color: white;
+  z-index: 110;
+  border-radius: 30px;
+}
+
+.spell-sort {
+  width: 270px;
+  height: 50px;
+  border: 1px solid black;
+  margin: auto;
+  text-align: center;
+  line-height: 50px;
+  font-size: 22px;
+  background-color: rgb(144, 177, 247);
+  position: relative;
+  outline: none
+}
+
+.spell-sort:hover {
+  border: 2px solid red;
+}
+
+.spell-sort:focus {
+  border: 2px solid red;
+}
+
+.spell-sort:focus::before, .spell-sort:hover::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\F105";
+  color: rgba(214, 61, 61, 0.842);
+  position: absolute;
+  left: -28px;
+  font-size: 44px;
+  line-height: 44px;
+}
+
+.spell-math {
+  width: 270px;
+  height: 50px;
+  border: 1px solid black;
+  margin: auto;
+  text-align: center;
+  line-height: 50px;
+  font-size: 22px;
+  background-color: rgb(144, 177, 247);
+  position: relative;
+  outline: none;
+}
+
+.spell-math:hover {
+  border: 2px solid red;
+}
+
+.spell-math:focus {
+  border: 2px solid red;
+}
+
+.spell-math:focus::before, .spell-math:hover::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\F105";
+  color: rgba(214, 61, 61, 0.842);
+  position: absolute;
+  left: -28px;
+  font-size: 44px;
+  line-height: 44px;
+}
+
+.spell-comparison {
+  width: 270px;
+  height: 50px;
+  border: 1px solid black;
+  margin: auto;
+  text-align: center;
+  line-height: 50px;
+  font-size: 22px;
+  background-color: rgb(144, 177, 247);
+  position: relative;
+  outline: none;
+}
+
+.spell-comparison:hover {
+  border: 2px solid red;
+}
+
+.spell-comparison:focus {
+  border: 2px solid red;
+}
+
+.spell-comparison:focus::before, .spell-comparison:hover::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\F105";
+  color: rgba(214, 61, 61, 0.842);
+  position: absolute;
+  left: -28px;
+  font-size: 44px;
+  line-height: 44px;
+}
+
+.spell-sequence {
+  width: 270px;
+  height: 50px;
+  border: 1px solid black;
+  margin: auto;
+  text-align: center;
+  line-height: 50px;
+  font-size: 22px;
+  background-color: rgb(144, 177, 247);
+  position: relative;
+  outline: none;
+}
+
+.spell-sequence:hover {
+  border: 2px solid red;
+}
+
+.spell-sequence:focus {
+  border: 2px solid red;
+}
+
+.spell-sequence:focus::before, .spell-sequence:hover::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\F105";
+  color: rgba(214, 61, 61, 0.842);
+  position: absolute;
+  left: -28px;
+  font-size: 44px;
+  line-height: 44px;
+}
+
+
+.spell-translate {
+  width: 270px;
+  height: 50px;
+  border: 1px solid black;
+  margin: auto;
+  text-align: center;
+  line-height: 50px;
+  font-size: 22px;
+  background-color: rgb(144, 177, 247);
+  position: relative;
+  outline: none;
+}
+
+.spell-translate:hover {
+  border: 2px solid red;
+}
+
+.spell-translate:focus {
+  border: 2px solid red;
+}
+
+.spell-translate:focus::before, .spell-translate:hover::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\F105";
+  color: rgba(214, 61, 61, 0.842);
+  position: absolute;
+  left: -28px;
+  font-size: 44px;
+  line-height: 44px;
+}
+
+.heal__spells__list {
+  width: 500px;
+  height: 380px;
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  margin: auto;
+  margin-top: -550px;
+  background-color: white;
+  z-index: 110;
+  border-radius: 30px;
+}
+
+.spell-delete-word {
+  width: 270px;
+  height: 50px;
+  border: 1px solid black;
+  margin: auto;
+  text-align: center;
+  line-height: 50px;
+  font-size: 22px;
+  background-color: rgb(138, 243, 128);
+  position: relative;
+  outline: none;
+}
+
+.spell-delete-word:hover {
+  border: 2px solid red;
+}
+
+.spell-delete-word:focus {
+  border: 2px solid red;
+}
+
+.spell-delete-word:focus::before, .spell-delete-word:hover::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\F105";
+  color: rgba(24, 67, 185, 0.842);
+  position: absolute;
+  left: -28px;
+  font-size: 44px;
+  line-height: 44px;
+}
+
+.spell-grammatic {
+  width: 270px;
+  height: 50px;
+  border: 1px solid black;
+  margin: auto;
+  text-align: center;
+  line-height: 50px;
+  font-size: 22px;
+  background-color: rgb(138, 243, 128);
+  position: relative;
+  outline: none;
+}
+
+.spell-grammatic:hover {
+  border: 2px solid red;
+}
+
+.spell-grammatic:focus {
+  border: 2px solid red;
+}
+
+.spell-grammatic:focus::before, .spell-grammatic:hover::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\F105";
+  color: rgba(24, 67, 185, 0.842);
+  position: absolute;
+  left: -28px;
+  font-size: 44px;
+  line-height: 44px;
+}
+
+.spell-logic {
+  width: 270px;
+  height: 50px;
+  border: 1px solid black;
+  margin: auto;
+  text-align: center;
+  line-height: 50px;
+  font-size: 22px;
+  background-color: rgb(138, 243, 128);
+  position: relative;
+  outline: none;
+}
+
+.spell-logic:hover {
+  border: 2px solid red;
+}
+
+.spell-logic:focus {
+  border: 2px solid red;
+}
+
+.spell-logic:focus::before, .spell-logic:hover::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\F105";
+  color: rgba(24, 67, 185, 0.842);
+  position: absolute;
+  left: -28px;
+  font-size: 44px;
+  line-height: 44px;
+}
+
+.spell-pazzle {
+  width: 270px;
+  height: 50px;
+  border: 1px solid black;
+  margin: auto;
+  text-align: center;
+  line-height: 50px;
+  font-size: 22px;
+  background-color: rgb(138, 243, 128);
+  position: relative;
+  outline: none;
+}
+
+.spell-pazzle:hover {
+  border: 2px solid red;
+}
+
+.spell-pazzle:focus {
+  border: 2px solid red;
+}
+
+.spell-pazzle:focus::before, .spell-pazzle:hover::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\F105";
+  color: rgba(24, 67, 185, 0.842);
+  position: absolute;
+  left: -28px;
+  font-size: 44px;
+  line-height: 44px;
+}
+
+.spell-speech {
+  width: 270px;
+  height: 50px;
+  border: 1px solid black;
+  margin: auto;
+  text-align: center;
+  line-height: 50px;
+  font-size: 22px;
+  background-color: rgb(138, 243, 128);
+  position: relative;
+  outline: none;
+}
+
+.spell-speech:hover {
+  border: 2px solid red;
+}
+
+.spell-speech:focus {
+  border: 2px solid red;
+}
+
+.spell-speech:focus::before, .spell-speech:hover::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\F105";
+  color: rgba(24, 67, 185, 0.842);
+  position: absolute;
+  left: -28px;
+  font-size: 44px;
+  line-height: 44px;
+}
+.math-content {
+  width: 500px;
+  height: 300px;
+  display: flex;
+  margin-top: 10px;
+  flex-wrap: wrap;
+  margin: -500px auto;
+  background-color: white;
+  border-radius: 35px;
+  position: relative;
+  z-index: 110;
+}
+
+.math-content__operations {
+  width: 200px;
+  margin: 25px auto 0;
+  text-align: center;
+  font-size: 30px;
+  border-bottom: 1px solid black;
+  padding-bottom: 10px;
+}
+
+.math-content__operations > span {
+  color: green;
+}
+
+#math-form__input {
+  width: 100px;
+  height: 70px;
+  margin: 35px 198px;
+  font-size: 25px;
+  text-align: center;
+}
+
+#math-form__button {
+  width: 25%;
+  height: 40px;
+  margin: auto;
+  border: 2px solid rgb(86,69,75);
+  background-color: #488cf1;
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+}
+
+#math-form__button:hover {
+  color: rgb(255,255,255);
+  background: linear-gradient(to right, #0f2f5a 10%, #488cf1 69%, #0f2f5a);
+}
+
+#math-form__button:focus {
+  color: rgb(255,255,255);
+  background: linear-gradient(to right, #0f2f5a 10%, #488cf1 69%, #0f2f5a);
+}
+
+.comparison-content {
+  width: 700px;
+  height: 300px;
+  border-radius: 20px;
+  margin-top: 10px;
+  position: relative;
+  margin: -510px auto;
+  background-color: white;
+  z-index: 110;
+}
+
+.comparison-content__operations {
+  width: 85%;
+  margin: 0 auto;
+  margin-bottom: 5px;
+  text-align: center;
+  font-size: 46px;
+  border-bottom: 1px solid black;
+}
+
+.comparison-content__text {
+  width: 65%;
+  text-align: center;
+  font-size: 24px;
+  border-bottom: 1px solid black;
+  margin: 10px auto;
+}
+
+.comparison-content__text > span {
+  color: green;
+  font-size: 36px;
+}
+
+#comparison-form__input {
+  width: 50%;
+  height: 20%;
+  margin-left: 169px;
+  margin-top: 35px;
+  font-size: 24px;
+  text-align: center;
+}
+
+#comparison-form__input::-webkit-input-placeholder {
+  font-size: 24px;
+}
+
+#comparison-form__button {
+  width: 25%;
+  height: 40px;
+  margin: 30px auto;
+  border: 2px solid rgb(86,69,75);
+  background-color: #488cf1;
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+}
+
+#comparison-form__button:hover {
+  color: rgb(255,255,255);
+  background: linear-gradient(to right, #0f2f5a 10%, #488cf1 69%, #0f2f5a);
+}
+
+#comparison-form__button:focus {
+  color: rgb(255,255,255);
+  background: linear-gradient(to right, #0f2f5a 10%, #488cf1 69%, #0f2f5a);
+}
+
+.sort-content {
+  width: 500px;
+  height: 250px;
+  border-radius: 15px;
+  position: relative;
+  background-color: white;
+  margin: -510px auto;
+  display: flex;
+  flex-wrap: wrap;
+  z-index: 110;
+}
+
+.sort-content__text {
+  width: 100%;
+  height: 39px;
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 0;
+
+}
+
+.sortable {
+  display: flex;
+  width: 100%;
+  height: 88px;
+}
+
+#ui-state-default {
+  border: 1px solid black;
+}
+
+#sortable__items {
+  display: flex;
+  list-style-type: none;
+  height: 60px;
+  padding: 0;
+  margin: 30px auto;
+}
+
+#sortable__items li { 
+  margin: 3px 3px 3px 0;
+  padding: 1px;
+  float: left;
+  width: 50px;
+  height: 50px;
+  font-size: 2em;
+  text-align: center;
+  background-color: aliceblue;
+}
+
+#sort__button {
+  width: 32%;
+  height: 40px;
+  margin: 0 auto;
+  border: 2px solid rgb(86,69,75);
+  background-color: #488cf1;
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+}
+
+#sort__button:hover {
+  color: rgb(255,255,255);
+  background: linear-gradient(to right, #0f2f5a 10%, #488cf1 69%, #0f2f5a);
+}
+
+#sort__button:focus {
+  color: rgb(255,255,255);
+  background: linear-gradient(to right, #0f2f5a 10%, #488cf1 69%, #0f2f5a);
+}
+.translate-content {
+  width: 500px;
+  height: 260px;
+  border-radius: 15px;
+  margin-top: 10px;
+  position: relative;
+  background-color: white;
+  margin: -500px auto;
+  z-index: 110;
+}
+
+.translate-content__text {
+  text-align: center;
+  font-size: 25px;
+  border-bottom: 1px solid black;
+  width: 85%;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.translate-content__text  > span {
+  color: green;
+}
+
+#translate-form__input {
+  width: 200px;
+  height: 30px;
+  margin: 48px 148px;
+  text-align: center;
+}
+
+#translate-form__button {
+  width: 25%;
+  height: 40px;
+  margin: auto;
+  border: 2px solid rgb(86,69,75);
+  background-color: #488cf1;
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+}
+
+#translate__button:hover {
+  color: rgb(255,255,255);
+  background: linear-gradient(to right, #0f2f5a 10%, #488cf1 69%, #0f2f5a);
+}
+
+#translate__button:focus {
+  color: rgb(255,255,255);
+  background: linear-gradient(to right, #0f2f5a 10%, #488cf1 69%, #0f2f5a);
+}
+.sequence-content {
+  width: 500px;
+  height: 260px;
+  border-radius: 20px;
+  margin: -500px auto;
+  position: relative;
+  background-color: white;
+  z-index: 110;
+}
+
+.sequence-content__number {
+  width: 80%;
+  margin-left: 51px;
+  text-align: center;
+  font-size: 21px;
+  border-bottom: 1px solid black;
+  padding-bottom: 10px;
+  padding-top: 20px;
+}
+
+.sequence-content__number > span {
+  color: green;
+}
+
+.sequence-content__number > span:last-child {
+  color: red;
+}
+
+#sequence-form__input {
+  width: 120px;
+  height: 50px;
+  display: flex;
+  margin: 31px auto;
+  font-size: 34px;
+  text-align: center;
+}
+
+#sequence-form__button {
+  width: 25%;
+  height: 40px;
+  margin: auto;
+  border: 2px solid rgb(86,69,75);
+  background-color: #488cf1;
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+}
+
+#sequence-form__button:hover {
+  color: rgb(255,255,255);
+  background: linear-gradient(to right, #0f2f5a 10%, #488cf1 69%, #0f2f5a);
+}
+
+#sequence-form__button:focus {
+  color: rgb(255,255,255);
+  background: linear-gradient(to right, #0f2f5a 10%, #488cf1 69%, #0f2f5a);
+}
+
+.pazzle-content {
+  width: 500px;
+  height: 280px;
+  border: 1px solid black;
+  margin: -500px auto;
+  position: relative;
+  background-color: white;
+  z-index: 110;
+}
+
+.pazzle-content__text {
+  font-size: 21px;
+  text-align: center;
+  padding-bottom: 10px;
+  border-bottom: 1px solid black;
+  width: 80%;
+  display: flex;
+  margin: 26px auto;
+  justify-content: center;
+}
+
+#pazzle-form__input {
+  display: flex;
+  margin: 10px auto;
+  width: 50%;
+  height: 25px;
+  text-align: center;
+}
+
+#pazzle-form__button {
+  width: 25%;
+  height: 40px;
+  margin: 35px auto;
+  border: 2px solid rgb(86,69,75);
+  background-color: #488cf1;
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+}
+
+#pazzle-form__button:hover {
+  color: rgb(255,255,255);
+  background: linear-gradient(to right, #0f2f5a 10%, #488cf1 69%, #0f2f5a);
+}
+
+#pazzle-form__button:focus {
+  color: rgb(255,255,255);
+  background: linear-gradient(to right, #0f2f5a 10%, #488cf1 69%, #0f2f5a);
+}
+.speech-content {
+  width: 500px;
+  height: 280px;
+  border: 1px solid black;
+  position: relative;
+  margin: -500px auto;
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  z-index: 110;
+}
+
+.speech-content__text {
+  text-align: center;
+  font-size: 26px;
+  width: 90%;
+}
+
+.speech-form {
+  width: 100%;
+}
+
+#speech__button {
+  width: 30px;
+  height: 21px;
+  margin: auto 10px;
+  color: darkgoldenrod;
+}
+
+#speech__input {
+  display: block;
+  height: 40px;
+  width: 200px;
+  margin: 35px auto;
+  text-align: center;
+  font-size: 20px;
+}
+
+#speech-form__button {
+  width: 25%;
+  height: 40px;
+  margin: 35px auto;
+  border: 2px solid rgb(86,69,75);
+  background-color: #488cf1;
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+}
+
+#speech-form__button:hover {
+  color: rgb(255,255,255);
+  background: linear-gradient(to right, #0f2f5a 10%, #488cf1 69%, #0f2f5a);
+}
+
+#speech-form__button:focus {
+  color: rgb(255,255,255);
+  background: linear-gradient(to right, #0f2f5a 10%, #488cf1 69%, #0f2f5a);
+}
+.grammatic-content {
+  width: 500px;
+  height: 200px;
+  border: 1px solid black;
+  margin: -500px auto;
+  position: relative;
+  background-color: white;
+  z-index: 110;
+}
+
+.grammatic-content__text {
+  text-align: center;
+  font-size: 28px;
+}
+
+.grammatic-content__text > span {
+  color: green;
+}
+
+#grammatic__button {
+  width: 25%;
+  height: 40px;
+  margin: auto;
+  border: 2px solid rgb(86,69,75);
+  background-color: #488cf1;
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+}
+
+#grammatic__button:hover {
+  color: rgb(255,255,255);
+  background: linear-gradient(to right, #0f2f5a 10%, #488cf1 69%, #0f2f5a);
+}
+
+#grammatic__button:focus {
+  color: rgb(255,255,255);
+  background: linear-gradient(to right, #0f2f5a 10%, #488cf1 69%, #0f2f5a);
+}
+.logic-content {
+  width: 500px;
+  height: 300px;
+  border: 1px solid black;
+  position: relative;
+  margin: -510px auto;
+  background-color: white;
+  z-index: 110;
+}
+
+.logic-content__text {
+  font-size: 21px;
+  text-align: center;
+  border-bottom: 1px solid black;
+  width: 80%;
+  margin: 25px auto;
+  padding-bottom: 20px;
+}
+
+#logic-form__input {
+  width: 140px;
+  height: 38px;
+  margin: 20px 178px;
+  text-align: center;
+  font-size: 15px;
+}
+
+#logic-form__button {
+  width: 25%;
+  height: 40px;
+  margin: auto;
+  border: 2px solid rgb(86,69,75);
+  background-color: #488cf1;
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+}
+
+#logic-form__button:hover {
+  color: rgb(255,255,255);
+  background: linear-gradient(to right, #0f2f5a 10%, #488cf1 69%, #0f2f5a);
+}
+
+#logic-form__button:focus {
+  color: rgb(255,255,255);
+  background: linear-gradient(to right, #0f2f5a 10%, #488cf1 69%, #0f2f5a);
+}
+.delete-word-content {
+  width: 500px;
+  height: 300px;
+  border: 1px solid black;
+  position: relative;
+  margin: -510px auto;
+  background-color: white;
+  z-index: 110;
+}
+
+.delete-word-content > p {
+  font-size: 22px;
+  text-align: center;
+  border-bottom: 1px solid black;
+  width: 80%;
+  margin: 25px auto;
+  padding-bottom: 15px;
+}
+
+.delete-word-content > p > span {
+  color: green;
+}
+
+.delete-word-content__text { 
+  font-size: 21px;
+  text-align: center;
+
+}
+
+#delete-word-form__input {
+  width: 200px;
+  height: 50px;
+  display: flex;
+  margin: 20px auto;
+  text-align: center;
+  font-size: 18px;;
+}
+
+#delete-word-form__button {
+  width: 25%;
+  height: 40px;
+  margin: auto;
+  border: 2px solid rgb(86,69,75);
+  background-color: #488cf1;
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+}
+
+#delete-word-form__button:hover {
+  color: rgb(255,255,255);
+  background: linear-gradient(to right, #0f2f5a 10%, #488cf1 69%, #0f2f5a);
+}
+
+#delete-word-form__button:focus {
+  color: rgb(255,255,255);
+  background: linear-gradient(to right, #0f2f5a 10%, #488cf1 69%, #0f2f5a);
+}
+
+@media all and (max-width: 946px) {
+  .landing-page__screenshoots__content__screenshoots > img {
+    max-width: 100%;
+    width: 320px;
+    height: 197px;
+    margin: 15px;
+  }
+}
+
+@media all and (max-width: 700px) {
+  .landing-page__screenshoots__content {
+    margin-top: 0;
+    display: flex;
+  }
+
+  .landing-page__screenshoots__content__screenshoots {
+  display: flex;
+  flex-wrap: wrap;
+  width: 56%;
+  margin: auto;
+  }
+
+  .landing-page__screenshoots__content__screenshoots > img {
+    max-width: 100%;
+    width: 290px;
+    height: 146px;
+    margin: 5px;
+  }
+}
+
+body {
+  margin: 0;
+  height: 969px;
+}
+
+.app-root {
+  height: 100%;
+}
+
+.landing-page header {
+  font-size: 24px;
+  background-image: url('images/background_home_header.jpg');
+  height: 969px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  width: 100%;
+  text-align: center;
+}
+
+.landing-page header > .header__nav {
+  background-image: url('images/background_nav_header.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+  width: 100%;
+}
+
+.landing-page header > div > nav {
+  width: 550px;
+  margin: 0px 200px 0 auto;
+}
+
+.header__content {
+  margin: 241px auto;
+}
+
+.header__content > h1 {
+  font-size: 57px;
+  text-shadow: #25671C 3px 0 0px, #25671c 0 3px 0px, #25671B -3px 0 1px, #25671c 0 -2px 0px;
+}
+
+.header__content  > h1:hover {
+  user-select: none;
+  color: rgb(171, 15, 15)
+}
+
+.landing-page ul {
+  margin: 0;
+  padding: 0;
+  display: inline-flex;
+  justify-content: space-between;
+  width: 100%;
+  list-style-type: none;
+}
+
+.landing-page__table-score {
+  cursor: pointer;
+}
+
+#landing-page__button {
+  user-select: none;
+  width: 240px;
+  height: 79px;
+  margin: 200px auto;
+  color: rgb(255,255,255);
+  border: 2px solid rgb(86,69,75);
+  background-color: rgb(113,10,3);
+  font-size: 46px;
+}
+
+#landing-page__button:hover {
+  background: linear-gradient(to right, #670402 10%, #de1101 69%, #670402);
+}
+
+.landing-page__history {
+  display: flex;
+  height: 970px;
+  background-image: url('images/background_home_history.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.landing-page__history > div {
+  text-align: justify;
+  font-size: 34px;
+  width: 478px;
+  margin: 100px;
+  color: white;
+  text-shadow: #000 1px 0 0px, #000 0 1px 0px, #000 -1px 0 0px, #000 0 -1px 0px;
+}
+
+.landing-page__history > div > p::first-letter {
+  margin-left: 40px;
+}
+
+.landing-page__screenshoots {
+  background-image: url('images/background_screenshoot_home.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 969px;
+  display: flex;
+}
+
+.landing-page__screenshoots__content {
+  margin-top: 150px;
+  display:flex;
+}
+
+.landing-page__screenshoots__content__screenshoots {
+  display: flex;
+  flex-wrap: wrap;
+  width: 82%;
+  margin: auto;
+}
+
+.landing-page__screenshoots__content__screenshoots > img {
+  max-width: 100%;
+  width: 350px;
+  height: 200px;
+  margin: 15px;
+}
+
+.landing-page__screenshoots__content__screenshoots > img:hover {
+  transform: scale(1.5);
+}
+
+.landing-page footer {
+  background-image: url('./images/background_footer_home.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 26px;
+  color: rgb(255,255,255);
+  text-align: center;
+}
+
+.landing-page footer > p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:visited {
+  color: white;
+}
+
+
+
